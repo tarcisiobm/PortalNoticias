@@ -22,7 +22,8 @@
 .card {
   position: relative;
   overflow: hidden;
-  
+  border-radius: 4px;
+
   &::before {
     content: "";
     position: absolute;
@@ -31,26 +32,40 @@
     background: linear-gradient(180deg, transparent 0%, #020617 100%);
   }
 
-  figcaption{
+  figcaption {
     position: absolute;
+
     bottom: 0;
     padding: 24px;
+
+    &:has(.text-lg) {
+      padding: 12px;
+    }
   }
 
-  h2{
+  h2 {
     margin-top: 8px;
+    overflow: hidden;
+
+    display: box;
+    box-orient: vertical;
+    line-clamp: 3;
+
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
   }
-
 }
 
-.text-2xl{
-    font: var(--h1);
+.text-2xl {
+  font: var(--h1);
 }
 
-.text-xl{
-    font:var(--h2);
+.text-xl {
+  font: var(--h2);
 }
 
-.text-lg{
-    font: var(--h3);
+.text-lg {
+  font: var(--h3);
+  font-weight: 700;
 }

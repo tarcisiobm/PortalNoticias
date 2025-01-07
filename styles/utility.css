@@ -21,6 +21,7 @@
 
 .card {
   position: relative;
+  overflow: hidden;
   
   &::before {
     content: "";
@@ -29,4 +30,27 @@
     inset: 0;
     background: linear-gradient(180deg, transparent 0%, #020617 100%);
   }
+
+  figcaption{
+    position: absolute;
+    bottom: 0;
+    padding: 24px;
+  }
+
+  h2{
+    margin-top: 8px;
+  }
+
+}
+
+.text-2xl{
+    font: var(--h1);
+}
+
+.text-xl{
+    font:var(--h2);
+}
+
+.text-lg{
+    font: var(--h3);
 }

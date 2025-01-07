@@ -1,4 +1,4 @@
-.container{
+.container {
   max-width: 1280px;
   padding-inline: 32px;
   margin-inline: auto;
@@ -7,14 +7,26 @@
   display: grid;
 }
 
-.grid-flow-col{
+.grid-flow-col {
   grid-auto-flow: column;
 }
 
-.grid-col-2{
-    grid-template-columns: 1fr 1fr;
+.grid-col-2 {
+  grid-template-columns: 1fr 1fr;
 }
 
-.gap-16{
-    gap: 16px;
+.gap-16 {
+  gap: 16px;
+}
+
+.card {
+  position: relative;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    inset: 0;
+    background: linear-gradient(180deg, transparent 0%, #020617 100%);
+  }
 }

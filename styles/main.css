@@ -2,6 +2,11 @@ main{
     padding-block: 40px 80px;
 }
 
+main img{
+  object-fit: cover;
+  border-radius: 4px;
+}
+
 .featured {
   grid-template: 416px / 608px 592px;
 }

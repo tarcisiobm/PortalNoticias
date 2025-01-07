@@ -1,0 +1,11 @@
+main{
+    padding-block: 40px 80px;
+}
+
+.featured {
+  grid-template: 416px / 608px 592px;
+}
+
+.featured div:nth-child(2){
+    place-content: center;
+}

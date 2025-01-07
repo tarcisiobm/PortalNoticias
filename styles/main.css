@@ -1,16 +1,51 @@
-main{
-    padding-block: 40px 80px;
-}
-
-main img{
-  object-fit: cover;
-}
-
 .featured {
-  grid-template: 416px / 608px 592px;
+  padding-block: 40px 80px;
+  grid-template-columns: 608px 592px;
 }
 
-.featured div:nth-child(2){
-    place-content: center;
+section header {
+  padding-block: 12px 24px;
+  border-top: 1px solid var(--stroke-color);
+  font: var(--text-span);
 }
 
+.weekly {
+  header a {
+    justify-self: end;
+  }
+
+  & > div {
+    grid-template-columns: repeat(4, 292px);
+    padding-block: 24px;
+  }
+
+  img {
+    height: 160px;
+    object-fit: contain;
+  }
+
+  p {
+
+    margin-top: 8px;
+    font-weight: 800;
+
+    overflow: hidden;
+    display: box;
+    box-orient: vertical;
+    line-clamp: 3;
+
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+  }
+
+
+  figure{
+    position: relative;
+  }
+  .content-tag{
+    position: absolute;
+    top: 8px;
+    left: 8px;
+  }
+}
